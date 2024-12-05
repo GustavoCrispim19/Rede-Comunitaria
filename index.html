@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendário</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('background.jpeg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .bg-gradient {
+      background: url('background.jpeg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .card {
+      background-color: #f8f9fa;
+      border: none;
+    }
+
+    .table {
+      background-color: #fff;
+      font-size: 1.1rem; /* Tamanho da fonte levemente maior */
+    }
+
+    .table th,
+    .table td {
+      height: 90px; /* Altura ligeiramente maior */
+      vertical-align: middle; /* Centraliza verticalmente o texto */
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid bg-gradient vh-100 d-flex flex-column justify-content-center align-items-center">
+    <div class="text-white mb-4">
+      <h3 class="fw-bold">Tela Modal Principal Visão Usuário</h3>
+    </div>
+    <div class="card p-5 shadow-lg rounded" style="width: 100%; max-width: 950px;"> <!-- Card ampliado -->
+      <div class="mb-4">
+        <select class="form-select" aria-label="Selecione a cidade">
+          <option selected>Cidade</option>
+          <option value="1">Cidade 1</option>
+          <option value="2">Cidade 2</option>
+          <option value="3">Cidade 3</option>
+        </select>
+      </div>
+      <h4 class="text-center fw-bold mb-4">OUTUBRO</h4>
+      <div class="table-responsive">
+        <table class="table table-bordered text-center align-middle">
+          <thead class="bg-light">
+            <tr>
+              <th>Domingo</th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+              <th>Sábado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+              <td>29</td>
+              <td>30</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h5 class="text-center mt-4">EVENTOS EM OUTUBRO</h5>
+    </div>
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
