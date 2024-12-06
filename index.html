@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calendário</title>
+  <title>Calendário com Eventos</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
@@ -27,22 +27,33 @@
 
     .table {
       background-color: #fff;
-      font-size: 1.1rem; /* Tamanho da fonte levemente maior */
+      font-size: 1.2rem;
+      border-spacing: 10px; /* Espaçamento entre células */
     }
 
     .table th,
     .table td {
-      height: 90px; /* Altura ligeiramente maior */
-      vertical-align: middle; /* Centraliza verticalmente o texto */
+      height: 120px; /* Aumentado */
+      width: 120px; /* Aumentado */
+      vertical-align: middle;
+    }
+
+    .event-card {
+      background-color: #e9ecef;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .event-card p {
+      margin: 0;
     }
   </style>
 </head>
 <body>
-  <div class="container-fluid bg-gradient vh-100 d-flex flex-column justify-content-center align-items-center">
-    <div class="text-white mb-4">
-      <h3 class="fw-bold">Tela Modal Principal Visão Usuário</h3>
-    </div>
-    <div class="card p-5 shadow-lg rounded" style="width: 100%; max-width: 950px;"> <!-- Card ampliado -->
+  <div class="container-fluid bg-gradient min-vh-100 d-flex flex-column align-items-center pt-5">
+    <div class="card p-5 shadow-lg rounded" style="width: 100%; max-width: 950px;">
       <div class="mb-4">
         <select class="form-select" aria-label="Selecione a cidade">
           <option selected>Cidade</option>
@@ -62,7 +73,7 @@
               <th>Quarta</th>
               <th>Quinta</th>
               <th>Sexta</th>
-              <th>Sábado </th>
+              <th>Sábado</th>
             </tr>
           </thead>
           <tbody>
@@ -115,9 +126,24 @@
         </table>
       </div>
       <h5 class="text-center mt-4">EVENTOS EM OUTUBRO</h5>
+      <!-- Eventos diretamente abaixo do calendário -->
+      <div class="mt-4">
+        <div class="event-card">
+          <p><strong>Dia:</strong> 10</p>
+          <p><strong>Descrição:</strong> Palestra de Sustentabilidade, ABC</p>
+          <p><strong>Local:</strong> Teatro da Praça, XYZ</p>
+          <p><strong>Horário:</strong> 19:00</p>
+          <p><strong>Link:</strong> <a href="#">Clique aqui</a></p>
+        </div>
+        <div class="event-card">
+          <p><strong>Dia:</strong> 15</p>
+          <p><strong>Descrição:</strong> Oficina de Artesanato</p>
+          <p><strong>Local:</strong> Associação Comunitária ABC</p>
+          <p><strong>Horário:</strong> 14:00</p>
+          <p><strong>Detalhes:</strong> <a href="#">Saiba mais</a></p>
+        </div>
+      </div>
     </div>
   </div>
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
